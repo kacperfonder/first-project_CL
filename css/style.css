@@ -69,7 +69,9 @@ body {
     background-image: url(../images/box1_img.jpg);
     height: 225px;
     background-size: cover;
-    
+}
+.formulation {
+    display: block;
 }
 .mid-img {
     background-image: url(../images/box2_img.jpg);
