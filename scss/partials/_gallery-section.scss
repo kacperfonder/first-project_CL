@@ -1,0 +1,49 @@
+.gallery {
+    margin: 2em 0;
+   
+}
+.gallery-container {
+    background-color: $bgrGallery;
+}
+.gallery-head,
+.gallery-head-2 {
+    font-size: 1em;
+    padding-left: 1.3em;
+    margin-top: 140px;
+    padding-top: 10px;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+.mid-img,
+.left-img,
+.right-img {
+    @include img;
+}
+.right-img {
+    h2{
+    font-size: 1em;
+    margin: 1.3em ;
+    }
+    p {
+    color: grey;
+    margin: 1.3em ; 
+    }
+}
+.gallery-head::after,
+.gallery-head-2::after,
+.right-img::after {
+    @include img-after;
+}
+.right-img::after {
+    top: 40px;
+    left: 20px;
+}
+.mid-img {
+    background-image: url(../images/box2_img.jpg);
+    height: 225px;
+}
+.left-img {
+    background-image: url(../images/box1_img.jpg);
+    height: 225px;
+}

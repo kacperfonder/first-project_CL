@@ -1,0 +1,41 @@
+.top-container{
+    padding: 4% 5%;
+    background: $top-container;
+}
+.logo-color{
+    color: $main-col;
+    font-weight: 800;
+    font-size: 40px;
+}
+.top-header{
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+.left-button, .right-button {
+    border: none;
+    background: none;
+    color: $main-col;
+    font-size: 70px;
+    font-weight: thin;
+}
+
+.descriptions {
+    padding: 5% 5%;
+    text-align: center;
+    p {
+    font-size: 15px;
+    }
+}
+.see-more-button {
+    margin-top: 5%;
+    width: 210px;
+    height: 50px;
+    background-color: $main-col;
+    color: #ffffff;
+    font-size: 18px;
+    border:0;
+    border-radius: 5px 5px;
+}
+.mySlides li {
+    text-decoration: none;
+}

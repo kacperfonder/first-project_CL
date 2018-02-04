@@ -1,0 +1,123 @@
+.option {
+    background-color: rgba(169, 164, 164, .1);
+}
+.sec-header {
+    @include sec-header;
+}
+.sec-header::after {
+  @include sec-header-after;
+}
+.tariff-head {
+   margin-top: 10%;
+}
+.tariff {
+    border: 1px solid $grey-font-col; 
+    text-align: center;  
+    position: relative;
+    width: 30%;
+    height: 500px;
+    margin: 50px 0;
+    background-color: white;
+    &:hover {
+        background-color: $main-col; 
+    }
+    &:hover .tariff-price {
+        color: $main-col;
+        background-color: $white; 
+    }
+    &:hover .tariff-head{
+        color: $white; 
+    }
+    &:hover .join-button {
+        color: $main-col;
+        background-color: $white;
+    }
+    &:hover 
+    span,
+    ul, {
+        background-color: $white; 
+    }
+    &:hover::before {
+        background-color: $main-col; 
+    }
+    &:hover::after {
+        background-color: $white; 
+    }
+}
+.tariff::after {
+    content: "";
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: $grey-font-col;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%,0);
+
+}
+.tariff::before {
+    content: "";
+    border-radius: 50%;
+    border: 1px solid $grey-font-col;
+    width: 60px;
+    height: 60px;
+    background-color: $white;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%,0);
+   
+}
+
+.tariff-head,  {
+    padding-bottom: 30px;
+    display: block; 
+    color: $main-col;
+    font-size: $tariff-font;
+   
+}
+.tariff-price {
+    border: 1px solid $grey-font-col;
+    border-radius: 50%;
+    padding: 30px 24px;
+    display: inline-block; 
+    color: $tariff;
+    
+}
+.advanced {
+    padding: 30px 16px;
+}
+.tariff-option {
+    display: block;
+    padding-top: 35px;
+    line-height: 30px;
+    color: $tariff;
+    font-size: $tariff-font;
+    li:nth-child(odd) {
+    display: block;
+    background-color: rgba(192,192,192,.5);
+    height: 45px;
+    padding: 5px 0;
+    }
+    li:nth-child(even) {
+    display: block;
+    background-color: rgba(192,192,192,.25);
+    height: 45px;
+    padding: 5px 0;
+    }
+}
+.join-button {
+    @include button;
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.price {
+    font-weight: 700;
+    font-size: 35px;
+}
+

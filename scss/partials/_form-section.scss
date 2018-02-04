@@ -1,0 +1,51 @@
+.sec-header {
+    @include sec-header;
+}
+.sec-header::after {
+  @include sec-header-after;
+}
+.form {
+    width: 700px;
+    @include column-flex; 
+}
+.aside {
+    @include column-flex;
+    align-items: flex-end;
+    width: 330px;
+    button {
+        @include button;
+        width: 330px;
+        height: 60px;
+        font-size: $tariff-font;
+    }
+}
+.red-chair {
+    margin: 0 20px;
+}
+.form-ok {
+    @include border;
+    padding: 5px;
+}
+.agreed {
+    color: grey;
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    span {
+        padding-left: 20px;
+    }
+}
+input,
+textarea {
+    @include border;
+    margin-top: 20px;
+    height: 60px;
+    font-size: $tariff-font;
+}
+textarea {
+    height: 200px;
+    resize:none;
+}
+
+
+

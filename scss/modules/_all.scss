@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+$tariff-font: 25px;
+
+button:hover {
+    cursor: pointer; 
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 5%; 
+}
+.col-layout  {
+    display: flex; 
+    justify-content: space-between;
+}
+body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    background-color: $bodyCol;
+}
+@mixin img {
+    position: relative;
+    width: 30%;
+    background-size: 100% 100%;
+    background-position: center center;
+    border: 0.5px solid rgba(162, 148, 156, 0.8);
+}
+@mixin img-after {
+    content: "";
+    width: 150px;
+    height: 10px;
+    background-color: $main-col;
+    position: absolute;
+    top: 175px;
+    left: 20px;
+}
+@mixin sec-header {
+    padding-top: 30px;
+    margin-bottom:  30px;
+    position: relative;
+}
+@mixin sec-header-after {
+    content: "";
+    width: 300px;
+    height: 10px;
+    background-color: $main-col;
+    position: absolute;
+    top: 52px;
+    left: 0;
+}
+@mixin border {
+    border: 1px solid $main-col;
+    border-radius: 5px;
+}
+@mixin button {
+    border-radius: 5px; 
+    background-color: $main-col;
+    border: 0;
+    color: $white;
+}
+@mixin column-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}

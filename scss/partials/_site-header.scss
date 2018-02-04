@@ -1,0 +1,52 @@
+.site-header {
+    background-color: $nav-col;
+    padding: 1% 0;
+}
+.on {
+    color: $main-col;
+    font-weight: 600;
+}
+.logo {
+    color:white;
+    font-weight: 600;
+}
+.nav-list{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    font-weight: 500; 
+    position: relative;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 500; 
+   
+}
+.hide {
+    list-style-type:none;
+    background-color: $nav-col;
+    padding: 5px 20px 5px 5px;
+    // margin-top: 25px;
+    text-align: left;
+    position: absolute;
+    left: 30px;
+    top: 45px;
+    
+    li {
+        padding-bottom: 5px;
+    }
+}
+.hide::after {
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;   
+        border-bottom: 30px solid black;
+        position: absolute;
+        top: -30px;
+        left: 30px;
+}
